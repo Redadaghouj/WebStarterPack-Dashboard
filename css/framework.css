@@ -43,6 +43,10 @@
     position: relative;
 }
 
+.ps-fixed {
+    position: fixed;
+}
+
 /* Font */
 .txt-c {
     text-align: center;
