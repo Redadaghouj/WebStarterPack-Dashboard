@@ -1,0 +1,79 @@
+:root {
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+}
+
+/* Box */
+.d-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+/* Margin + Padding */
+.m-20 {
+    margin: 20px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+/* Color */
+.bg-white {
+    background-color: #fff;
+}
+
+.txt-c {
+    color: #000;
+}
+
+/* Position */
+.ps-relative {
+    position: relative;
+}
+
+/* Font */
+.txt-c {
+    text-align: center;
+}
+
+.txt-cap {
+    text-transform: capitalize;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+/* Border */
+.rad-6 {
+    border-radius: 6px;
+}
+
+.rad-half {
+    border-radius: 50%;
+}
+
+/* Dimensions */
+.w-full {
+    width: 100%;
+}
+
+/* Component */
+
+.between-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
