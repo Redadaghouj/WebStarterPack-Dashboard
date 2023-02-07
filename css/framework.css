@@ -34,6 +34,16 @@
     }
 }
 
+@media (max-width: 767px) {
+    .none-mobile {
+        display: none;
+    }
+}
+
+.block {
+    display: block;
+}
+
 /* Margin + Padding */
 .m-20 {
     margin: 20px;

@@ -289,3 +289,85 @@ a {
 /* Dashboard */
 
 /* Welcome */
+
+.welcome {
+    overflow: hidden;
+}
+
+.welcome .head {
+    padding: 20px 20px 10px;
+}
+
+.welcome .head .welcome-img {
+    width: 200px;
+}
+
+.welcome .head .text .subtitle {
+    color: var(--grey-color);
+    margin-top: 5px;
+}
+
+@media (max-width: 767px) {
+    .welcome .head .text .subtitle {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
+
+.welcome .head .avatar {
+    width: 65px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    bottom: -32.5px;
+    left: 20px;
+}
+
+@media (max-width: 767px) {
+    .welcome .head .avatar {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.welcome .infos {
+    margin: 50px 0 0;
+    padding: 20px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .welcome .infos {
+        flex-direction: column;
+    }
+}
+
+.welcome .infos .info {
+    flex: 1;
+}
+
+@media (max-width: 767px) {
+    .welcome .infos .info:nth-child(2) {
+        margin: 20px 0;
+    }
+}
+
+.welcome .infos .info span:last-child {
+    color: var(--grey-color);
+    margin-top: 10px;
+}
+
+.welcome a {
+    color: #fff;
+    background-color: var(--blue-color);
+    width: fit-content;
+    margin: 20px 20px 60px auto;
+    padding: 4px 10px;
+}
+
+@media (max-width: 767px) {
+    .welcome a {
+        margin-bottom: 20px;
+    }
+}
