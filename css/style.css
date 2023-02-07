@@ -17,6 +17,7 @@
     margin: 0;
     scrollbar-width: auto;
     scrollbar-color: var(--blue-color) #ffffff;
+    outline: 0;
 }
 
 html {
@@ -74,7 +75,6 @@ a {
 
 .page {
     background-color: #F1F5F9;
-    height: 300vh;
     justify-content: flex-end;
 }
 
@@ -205,7 +205,6 @@ a {
 
 .content .header .left input {
     padding: 10px 10px 10px 30px;
-    outline: 0;
     border: 1px solid #ccc;
     width: 160px;
     transition: width .3s;
@@ -270,7 +269,7 @@ a {
 
 /* Dashboard */
 
-/* Welcome */
+/* Welcome Widget*/
 
 .welcome {
     overflow: hidden;
@@ -303,8 +302,13 @@ a {
 }
 
 .welcome a {
-    margin: 20px 20px 60px auto;
+    margin: 20px 20px 10px auto;
     padding: 4px 10px;
+    transition: background-color .5s;
+}
+
+.welcome a:hover {
+    background-color: var(--blue-alt-color);
 }
 
 @media (max-width: 767px) {
@@ -325,4 +329,27 @@ a {
     .welcome a {
         margin-bottom: 20px;
     }
+}
+
+/* Draft Widget*/
+
+.draft form input,
+.draft form textarea {
+    border: 0;
+}
+
+.draft form textarea {
+    resize: none;
+    height: 180px;
+}
+
+.draft form input[type="submit"] {
+    margin-left: auto;
+    padding: 4px 10px;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+.draft form input[type="submit"]:hover {
+    background-color: var(--blue-alt-color);
 }

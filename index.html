@@ -114,10 +114,11 @@
           </div>
         </header>
         <!-- Section Title -->
-        <h1 class="title txt-cap ps-relative mx-20 mt-20">dashboard</h1>
+        <h1 class="title txt-cap ps-relative m-20 mb-40">dashboard</h1>
         <!-- Wrapper -->
         <section class="wrapper d-grid gap-20 mt-20">
-          <div class="welcome bg-white rad-10 mt-20">
+          <!-- Welcome Widget -->
+          <div class="welcome bg-white rad-10">
             <div class="head d-flex justify-between w-full bg-eee ps-relative">
               <div class="text">
                 <h2 class="title">Welcome</h2>
@@ -146,6 +147,31 @@
             <a href="#" class="rad-6 block w-fit c-white fs-14 bg-blue"
               >Profile</a
             >
+          </div>
+          <!-- Draft Widget -->
+          <div class="draft bg-white rad-10 p-20">
+            <div class="head">
+              <h2 class="title">Quick Draft</h2>
+              <div class="subtitle mt-10 fs-15 c-grey">
+                Write A Draft For Your Ideas
+              </div>
+            </div>
+            <form>
+              <input
+                class="w-full bg-eee mb-20 mt-20 rad-6 p-10"
+                type="text"
+                placeholder="Title"
+              />
+              <textarea
+                class="w-full bg-eee mb-20 rad-6 p-10"
+                placeholder="Your Thought"
+              ></textarea>
+              <input
+                class="c-white bg-blue rad-6 block w-fit fs-14"
+                type="submit"
+                value="Save"
+              />
+            </form>
           </div>
         </section>
       </div>
