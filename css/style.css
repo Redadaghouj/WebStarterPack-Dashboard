@@ -88,22 +88,9 @@ a {
     left: 0;
 }
 
-@media (max-width: 767px) {
-    .sidebar {
-        width: 60px;
-        padding: 10px;
-    }
-}
-
 .sidebar .title {
     font-size: 21px;
     padding: 20px 0 18px;
-}
-
-@media (max-width: 767px) {
-    .sidebar .title {
-        font-size: 14px;
-    }
 }
 
 .sidebar .title::before,
@@ -129,22 +116,8 @@ a {
     border: 5px solid #fff;
 }
 
-@media (max-width: 767px) {
-
-    .sidebar .title::before,
-    .sidebar .title::after {
-        display: none;
-    }
-}
-
 .sidebar .links {
     margin: 40px 0;
-}
-
-@media (max-width: 767px) {
-    .sidebar .links {
-        margin: 0;
-    }
 }
 
 .sidebar .links li {
@@ -153,12 +126,6 @@ a {
 
 .sidebar .links li a {
     transition: background-color .5s;
-}
-
-@media (max-width: 767px) {
-    .sidebar .links li a {
-        padding: 10px;
-    }
 }
 
 .sidebar .links li a.active,
@@ -171,12 +138,32 @@ a {
 }
 
 @media (max-width: 767px) {
+    .sidebar {
+        width: 60px;
+        padding: 10px;
+    }
+
+    .sidebar .title {
+        font-size: 14px;
+    }
+
+    .sidebar .title::before,
+    .sidebar .title::after {
+        display: none;
+    }
+
+    .sidebar .links {
+        margin: 0;
+    }
+
+    .sidebar .links li a {
+        padding: 10px;
+    }
+
     .sidebar .links li a .icon {
         margin-right: 0;
     }
-}
 
-@media (max-width: 767px) {
     .sidebar .links li a span {
         display: none;
     }
@@ -198,7 +185,6 @@ a {
 
 .content .header {
     height: 65px;
-    width: 100%;
     padding: 0 20px;
     position: sticky;
     top: 0;
@@ -256,10 +242,6 @@ a {
 
 /* Title Section */
 
-.content>.title {
-    margin: 20px 20px 40px;
-}
-
 @media (max-width: 767px) {
     .content>.title {
         margin: 20px 10px;
@@ -302,9 +284,27 @@ a {
     width: 200px;
 }
 
-.welcome .head .text .subtitle {
-    color: var(--grey-color);
-    margin-top: 5px;
+.welcome .head .avatar {
+    width: 65px;
+    border: 5px solid #fff;
+    bottom: -32.5px;
+    left: 20px;
+}
+
+.welcome .infos {
+    margin-top: 50px;
+    padding: 20px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.welcome .infos .info {
+    flex: 1;
+}
+
+.welcome a {
+    margin: 20px 20px 60px auto;
+    padding: 4px 10px;
 }
 
 @media (max-width: 767px) {
@@ -312,61 +312,16 @@ a {
         margin-bottom: 30px;
         text-align: center;
     }
-}
 
-.welcome .head .avatar {
-    width: 65px;
-    border: 5px solid #fff;
-    border-radius: 50%;
-    bottom: -32.5px;
-    left: 20px;
-}
-
-@media (max-width: 767px) {
     .welcome .head .avatar {
         left: 50%;
         transform: translateX(-50%);
     }
-}
 
-.welcome .infos {
-    margin: 50px 0 0;
-    padding: 20px;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-    text-align: center;
-}
-
-@media (max-width: 767px) {
-    .welcome .infos {
-        flex-direction: column;
-    }
-}
-
-.welcome .infos .info {
-    flex: 1;
-}
-
-@media (max-width: 767px) {
     .welcome .infos .info:nth-child(2) {
         margin: 20px 0;
     }
-}
 
-.welcome .infos .info span:last-child {
-    color: var(--grey-color);
-    margin-top: 10px;
-}
-
-.welcome a {
-    color: #fff;
-    background-color: var(--blue-color);
-    width: fit-content;
-    margin: 20px 20px 60px auto;
-    padding: 4px 10px;
-}
-
-@media (max-width: 767px) {
     .welcome a {
         margin-bottom: 20px;
     }
