@@ -61,6 +61,7 @@ a {
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 @media (max-width:767px) {
@@ -189,6 +190,7 @@ a {
     position: sticky;
     top: 0;
     z-index: 98;
+    box-shadow: 0 0 10px #ddd;
 }
 
 .content .header .left::before {
@@ -481,4 +483,18 @@ a {
 
 .tasks .tasks-box .task svg:hover {
     color: var(--red-color);
+}
+
+/* Latest Upload Widget */
+
+.latest-upload .uploads .upload:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.latest-upload .uploads .upload img {
+    width: 40px;
+}
+
+.latest-upload .uploads .upload .text {
+    flex: 1;
 }
