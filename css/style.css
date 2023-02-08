@@ -413,3 +413,14 @@ a {
 }
 
 /* Ticket Widget */
+
+.ticket .boxes .box {
+    border: 1px solid #ccc;
+    width: calc(50% - 10px);
+}
+
+@media (max-width: 767px) {
+    .ticket .boxes .box {
+        width: 100%;
+    }
+}

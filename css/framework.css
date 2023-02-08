@@ -20,6 +20,10 @@
     justify-content: space-between;
 }
 
+.f-wrap {
+    flex-wrap: wrap;
+}
+
 .d-grid {
     display: grid;
 }
@@ -81,6 +85,10 @@
     margin-top: 30px;
 }
 
+.mb-5 {
+    margin-bottom: 5px;
+}
+
 .mb-10 {
     margin-bottom: 10px;
 }
@@ -113,6 +121,11 @@
 
 .p-30 {
     padding: 30px;
+}
+
+.py-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 @media (max-width: 767px) {
@@ -179,6 +192,10 @@
     color: var(--green-color);
 }
 
+.c-red {
+    color: var(--red-color);
+}
+
 /* Position */
 .ps-relative {
     position: relative;
@@ -213,6 +230,10 @@
 
 .fs-15 {
     font-size: 15px;
+}
+
+.fs-25 {
+    font-size: 25px;
 }
 
 .fw-bold {
