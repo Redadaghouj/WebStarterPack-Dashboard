@@ -411,3 +411,5 @@ a {
 .target .items .item:nth-child(3) .details .progress span::after {
     background-color: var(--green-color);
 }
+
+/* Ticket Widget */
