@@ -424,3 +424,28 @@ a {
         width: 100%;
     }
 }
+
+/* News Widget */
+
+.news .articles .article:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.news .articles .article img {
+    width: 100px;
+}
+
+.news .articles .article .text {
+    flex: 1;
+}
+
+@media (max-width: 767px) {
+    .news .articles .article img {
+        margin: 0 0 5px;
+    }
+
+    .news .articles .article .text .subtitle {
+        margin-bottom: 10px;
+        display: block;
+    }
+}

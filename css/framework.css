@@ -101,6 +101,10 @@
     margin-bottom: 40px;
 }
 
+.mr-15 {
+    margin-right: 15px;
+}
+
 .mx-20 {
     margin-right: 20px;
     margin-left: 20px;
@@ -121,6 +125,10 @@
 
 .p-30 {
     padding: 30px;
+}
+
+.pt-20 {
+    padding-top: 20px;
 }
 
 .py-20 {
@@ -168,7 +176,7 @@
     background-color: #D3F3DF;
 }
 
-.txt-c {
+.c-black {
     color: #000;
 }
 
@@ -222,6 +230,10 @@
 
 .txt-cap {
     text-transform: capitalize;
+}
+
+.fs-13 {
+    font-size: 13px;
 }
 
 .fs-14 {
