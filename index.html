@@ -30,7 +30,7 @@
               class="active d-flex align-center rad-6 txt-cap txt-c p-10 fs-14 align-center"
               href="#"
             >
-              <i class="icon fa-solid fa-chart-bar fa-fw"></i>
+              <i class="icon fa-solid fa-chart-bar"></i>
               <span>dashboard</span>
             </a>
           </li>
@@ -116,7 +116,7 @@
         <!-- Section Title -->
         <h1 class="title txt-cap ps-relative m-20 mb-40">dashboard</h1>
         <!-- Wrapper -->
-        <section class="wrapper d-grid gap-20 mt-20">
+        <section class="wrapper d-grid gap-15 mt-20">
           <!-- Welcome Widget -->
           <div class="welcome bg-white rad-10">
             <div class="head d-flex justify-between w-full bg-eee ps-relative">
@@ -144,21 +144,21 @@
                 <span class="fs-14 block mt-10 c-grey">Earned</span>
               </div>
             </div>
-            <a href="#" class="rad-6 block w-fit c-white fs-14 bg-blue"
+            <a href="#" class="btn-shape block w-fit c-white fs-14 bg-blue"
               >Profile</a
             >
           </div>
           <!-- Draft Widget -->
-          <div class="draft bg-white rad-10 p-20">
+          <div class="draft widget-shape">
             <div class="head">
               <h2 class="title">Quick Draft</h2>
-              <div class="subtitle mt-10 fs-15 c-grey">
+              <div class="subtitle mt-10 mb-20 fs-15 c-grey">
                 Write A Draft For Your Ideas
               </div>
             </div>
             <form>
               <input
-                class="w-full bg-eee mb-20 mt-20 rad-6 p-10"
+                class="w-full bg-eee mb-20 rad-6 p-10"
                 type="text"
                 placeholder="Title"
               />
@@ -167,11 +167,71 @@
                 placeholder="Your Thought"
               ></textarea>
               <input
-                class="c-white bg-blue rad-6 block w-fit fs-14"
+                class="c-white bg-blue btn-shape block w-fit fs-14"
                 type="submit"
                 value="Save"
               />
             </form>
+          </div>
+          <!-- Target Widget -->
+          <div class="target widget-shape">
+            <div class="head">
+              <h2 class="title">Yearly Targets</h2>
+              <div class="subtitle mt-10 fs-15 mb-20 c-grey">
+                Targets Of The Year
+              </div>
+            </div>
+            <div class="items">
+              <div class="item d-flex align-center gap-15 mb-20">
+                <div class="icon center-flex bg-blue-light">
+                  <i class="fa-solid fa-dollar-sign fa-lg c-blue"></i>
+                </div>
+                <div class="details w-full">
+                  <span class="block c-grey fs-14">Money</span>
+                  <span class="fw-bold mt-5 mb-10 block">$20.000</span>
+                  <div class="progress ps-relative w-full bg-blue-light">
+                    <span
+                      class="ps-absolute bg-blue"
+                      style="width: 80%"
+                      data-prog="80%"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <div class="item d-flex align-center gap-15 mb-20">
+                <div class="icon center-flex bg-orange-light">
+                  <i class="fa-solid fa-code fa-lg c-orange"></i>
+                </div>
+                <div class="details w-full">
+                  <span class="block c-grey fs-14">Projects</span>
+                  <span class="fw-bold mt-5 mb-10 block">24</span>
+                  <div class="progress ps-relative w-full bg-orange-light">
+                    <span
+                      class="ps-absolute bg-orange"
+                      style="width: 55%"
+                      data-prog="55%"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+              <div class="item d-flex align-center gap-15 mb-20">
+                <div class="icon center-flex bg-green-light">
+                  <i class="fa-solid fa-user fa-lg c-green"></i>
+                </div>
+
+                <div class="details w-full">
+                  <span class="block c-grey fs-14">Team</span>
+                  <span class="fw-bold mt-5 mb-10 block">12</span>
+                  <div class="progress ps-relative w-full bg-green-light">
+                    <span
+                      class="ps-absolute bg-green"
+                      style="width: 75%"
+                      data-prog="75%"
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>

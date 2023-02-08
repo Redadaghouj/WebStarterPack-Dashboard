@@ -303,7 +303,6 @@ a {
 
 .welcome a {
     margin: 20px 20px 10px auto;
-    padding: 4px 10px;
     transition: background-color .5s;
 }
 
@@ -345,11 +344,70 @@ a {
 
 .draft form input[type="submit"] {
     margin-left: auto;
-    padding: 4px 10px;
     cursor: pointer;
     transition: background-color .5s;
 }
 
 .draft form input[type="submit"]:hover {
     background-color: var(--blue-alt-color);
+}
+
+/* Target Widget */
+
+.target .items .item .icon {
+    width: 100px;
+    height: 80px;
+}
+
+.target .items .item .details .progress {
+    height: 5px;
+}
+
+.target .items .item .details .progress span {
+    top: 0;
+    left: 0;
+    height: inherit;
+}
+
+.target .items .item .details .progress span::before {
+    content: "";
+    position: absolute;
+    border: 5px solid transparent;
+    right: -4.5px;
+    top: -12px;
+}
+
+.target .items .item:nth-child(1) .details .progress span::before {
+    border-top-color: var(--blue-color);
+}
+
+.target .items .item:nth-child(2) .details .progress span::before {
+    border-top-color: var(--orange-color);
+}
+
+.target .items .item:nth-child(3) .details .progress span::before {
+    border-top-color: var(--green-color);
+}
+
+.target .items .item .details .progress span::after {
+    content: attr(data-prog);
+    position: absolute;
+    padding: 2px 5px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 6px;
+    top: -35px;
+    right: -18px;
+}
+
+.target .items .item:nth-child(1) .details .progress span::after {
+    background-color: var(--blue-color);
+}
+
+.target .items .item:nth-child(2) .details .progress span::after {
+    background-color: var(--orange-color);
+}
+
+.target .items .item:nth-child(3) .details .progress span::after {
+    background-color: var(--green-color);
 }
