@@ -93,6 +93,10 @@
     margin-bottom: 10px;
 }
 
+.mb-15 {
+    margin-bottom: 15px;
+}
+
 .mb-20 {
     margin-bottom: 20px;
 }
@@ -129,6 +133,10 @@
 
 .pt-20 {
     padding-top: 20px;
+}
+
+.pb-15 {
+    padding-bottom: 15px;
 }
 
 .py-20 {

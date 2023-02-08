@@ -222,6 +222,10 @@ a {
     opacity: 0;
 }
 
+.content .header .right>span {
+    cursor: pointer;
+}
+
 .content .header .right>span::before {
     content: "";
     position: absolute;
@@ -237,6 +241,7 @@ a {
     width: 32px;
     height: 32px;
     margin-left: 15px;
+    cursor: pointer;
 }
 
 /* Title Section */
@@ -448,4 +453,32 @@ a {
         margin-bottom: 10px;
         display: block;
     }
+}
+
+/* Tasks Widget */
+
+.tasks .tasks-box .task.special {
+    opacity: .3;
+}
+
+.tasks .tasks-box .task.special .text .title,
+.tasks .tasks-box .task.special .text .subtitle {
+    text-decoration: line-through;
+}
+
+.tasks .tasks-box .task:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.tasks .tasks-box .task .text {
+    flex: 1;
+}
+
+.tasks .tasks-box .task svg {
+    cursor: pointer;
+    transition: color .5s;
+}
+
+.tasks .tasks-box .task svg:hover {
+    color: var(--red-color);
 }
