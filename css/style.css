@@ -604,6 +604,7 @@ a {
 
 .latest-post .post-content {
     line-height: 1.8;
+    min-height: 150px;
 }
 
 .latest-post .outro {
