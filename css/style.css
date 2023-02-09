@@ -591,6 +591,44 @@ a {
     background-color: var(--red-color);
 }
 
+/* Latest Post Widget */
+
+.latest-post .intro img {
+    width: 50px;
+    height: 50px;
+}
+
+.latest-post .intro {
+    border-bottom: 1px solid #eee;
+}
+
+.latest-post .post-content {
+    line-height: 1.8;
+}
+
+.latest-post .outro {
+    border-top: 1px solid #eee;
+}
+
+.latest-post .outro span:first-child::before,
+.latest-post .outro span:last-child::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.latest-post .outro span:first-child::before {
+    content: "\f004";
+    left: -20px;
+}
+
+.latest-post .outro span:last-child::before {
+    content: "\f086";
+    left: -25px;
+}
+
 /* Animation */
 
 /* Last Project Progress Widget */
