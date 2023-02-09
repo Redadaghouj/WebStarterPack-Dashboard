@@ -701,6 +701,47 @@ a {
     color: #0077B5;
 }
 
+/* Projects Table Widget */
+
+.responsive-table {
+    overflow-x: auto;
+}
+
+.projects table {
+    border: 1px solid #eee;
+    border-collapse: collapse;
+    min-width: 1000px;
+}
+
+.projects table thead tr th {
+    padding: 15px;
+    text-align: left;
+}
+
+.projects table tbody tr td {
+    padding: 15px;
+    border: 1px solid #eee;
+}
+
+.projects table tbody tr {
+    transition: background-color .4s;
+}
+
+.projects table tbody tr:hover {
+    background-color: #FAF7F7;
+}
+
+.projects table tbody tr img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.projects table tbody tr img:not(:first-child) {
+    margin-left: -20px;
+}
+
 /* Animation */
 
 /* Last Project Progress Widget */
