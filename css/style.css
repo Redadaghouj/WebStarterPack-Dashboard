@@ -541,8 +541,59 @@ a {
     background-color: var(--blue-color);
 }
 
+/* Reminders Widget */
+
+.reminders .rows .row {
+    border-left-width: 2px;
+    border-left-style: solid;
+}
+
+.reminders .rows .row.blue {
+    border-left-color: var(--blue-color);
+}
+
+.reminders .rows .row.green {
+    border-left-color: var(--green-color);
+}
+
+.reminders .rows .row.orange {
+    border-left-color: var(--orange-color);
+}
+
+.reminders .rows .row.red {
+    border-left-color: var(--red-color);
+}
+
+.reminders .rows .row::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.reminders .rows .row.blue::before {
+    background-color: var(--blue-color);
+}
+
+.reminders .rows .row.green::before {
+    background-color: var(--green-color);
+}
+
+.reminders .rows .row.orange::before {
+    background-color: var(--orange-color);
+}
+
+.reminders .rows .row.red::before {
+    background-color: var(--red-color);
+}
+
 /* Animation */
 
+/* Last Project Progress Widget */
 @keyframes circle-current {
     100% {
         opacity: 0;
