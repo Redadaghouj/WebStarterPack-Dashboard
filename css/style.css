@@ -629,6 +629,78 @@ a {
     left: -25px;
 }
 
+/* Social Media Widget */
+
+.social-media .rows .row .icon {
+    width: 54px;
+    height: 57px;
+    transition: transform .4s;
+}
+
+.social-media .rows .row:hover .icon {
+    transform: translateX(7px)
+}
+
+.social-media .rows .row .icon.twitter,
+.social-media .rows .row .text a.twitter {
+    background-color: #1DA1F2;
+}
+
+.social-media .rows .row .icon.facebook,
+.social-media .rows .row .text a.facebook {
+    background-color: #1877F2;
+}
+
+.social-media .rows .row .icon.youtube,
+.social-media .rows .row .text a.youtube {
+    background-color: #FF0000;
+}
+
+.social-media .rows .row .icon.linkedin,
+.social-media .rows .row .text a.linkedin {
+    background-color: #0077B5;
+}
+
+.social-media .rows .row .icon svg {
+    font-size: 32px;
+}
+
+.social-media .rows .row .text {
+    flex: 1;
+}
+
+.social-media .rows .row .text.twitter {
+    background-color: #D2ECFC;
+}
+
+.social-media .rows .row .text.facebook {
+    background-color: #D1E4FC;
+}
+
+.social-media .rows .row .text.youtube {
+    background-color: #FFCCCC;
+}
+
+.social-media .rows .row .text.linkedin {
+    background-color: #CCE4F0;
+}
+
+.social-media .rows .row .text span.twitter {
+    color: #1DA1F2;
+}
+
+.social-media .rows .row .text span.facebook {
+    color: #1877F2;
+}
+
+.social-media .rows .row .text span.youtube {
+    color: #FF0000;
+}
+
+.social-media .rows .row .text span.linkedin {
+    color: #0077B5;
+}
+
 /* Animation */
 
 /* Last Project Progress Widget */
