@@ -498,3 +498,53 @@ a {
 .latest-upload .uploads .upload .text {
     flex: 1;
 }
+
+/* Last Project Progress Widget */
+
+.last-project img {
+    width: 160px;
+    bottom: 0;
+    right: 0;
+    opacity: .1;
+}
+
+.last-project .rows .row .circle {
+    border: 2px solid var(--blue-color);
+    width: 28px;
+    height: 28px;
+}
+
+.last-project .rows .row .circle.done::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: var(--blue-color);
+    border-radius: 50%;
+}
+
+.last-project .rows .row .circle.current::before {
+    animation: circle-current .8s alternate infinite;
+}
+
+.last-project .rows .row .circle.done::after {
+    content: "";
+    position: absolute;
+    bottom: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 20px;
+    background-color: var(--blue-color);
+}
+
+/* Animation */
+
+@keyframes circle-current {
+    100% {
+        opacity: 0;
+    }
+}
