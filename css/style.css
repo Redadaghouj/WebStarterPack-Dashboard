@@ -26,6 +26,8 @@ html {
 
 body {
     font-family: "Open Sans", sans-serif;
+    background-color: #F1F5F9;
+
 }
 
 ul {
@@ -75,7 +77,6 @@ a {
 /* Page */
 
 .page {
-    background-color: #F1F5F9;
     justify-content: flex-end;
 }
 
@@ -741,6 +742,97 @@ a {
 
 .projects table tbody tr img:not(:first-child) {
     margin-left: -20px;
+}
+
+/* End Dashboard */
+
+/* Settings */
+
+.settings-page {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:767px) {
+    .settings-page {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* Site Control Widget */
+
+.site-control .rows textarea {
+    resize: none;
+    width: 100%;
+    height: 150px;
+    border-color: #ccc;
+}
+
+/* General Info Widget */
+
+.general-info form input {
+    outline: 0;
+    border: 1px solid #ccc;
+}
+
+.general-info form .email-submit input:disabled {
+    background-color: #F0F4F8;
+    cursor: no-drop;
+}
+
+.general-info form .email-submit input:disabled::placeholder {
+    color: #bbb;
+}
+
+/* End Settings */
+
+/* Toggle Switch */
+
+.toggle-checkbox {
+    appearance: none;
+}
+
+.toggle-switch {
+    background-color: #ccc;
+    width: 78px;
+    height: 32px;
+    border-radius: 16px;
+    position: relative;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.toggle-switch::before {
+    content: "\f00d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background-color: #fff;
+    color: #aaa;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
+}
+
+.toggle-checkbox:checked+.toggle-switch {
+    background-color: var(--blue-color);
+}
+
+.toggle-checkbox:checked+.toggle-switch::before {
+    content: "\f00c";
+    left: 50px;
+    background-color: #fff;
+    color: var(--blue-color);
 }
 
 /* Animation */
