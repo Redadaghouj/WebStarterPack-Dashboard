@@ -788,12 +788,53 @@ a {
     color: #bbb;
 }
 
+/* Security Info Widget */
+
+.security-info .rows .row:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+}
+
+.security-info .rows .row .change-btn {
+    transition: background-color .4s;
+}
+
+.security-info .rows .row .change-btn:hover {
+    background-color: var(--blue-alt-color);
+}
+
+/* Social Info Widget */
+
+.social-info .rows .row {
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.social-info .rows .row svg {
+    color: #888;
+    padding: 12px 10px;
+    background-color: #F6F6F6;
+    transition: color .4s;
+}
+
+.social-info .rows .row input {
+    outline: 0;
+    border: 0;
+    border-left: 1px solid #ddd;
+    background-color: #F6F6F6;
+    padding: 12px;
+}
+
+.social-info .rows .row:focus-within svg {
+    color: #000;
+}
+
 /* End Settings */
 
 /* Toggle Switch */
 
 .toggle-checkbox {
     appearance: none;
+    display: none;
 }
 
 .toggle-switch {
