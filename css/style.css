@@ -949,6 +949,88 @@ a {
 
 /* End Settings */
 
+/* Profile */
+
+/* .profile-page {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:767px) {
+    .profile-page {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+} */
+
+/* Overview Widget */
+
+.overview .side {
+    border-right: 1px solid #eee;
+    padding: 20px;
+    width: 300px;
+}
+
+.overview .side img {
+    width: 120px;
+}
+
+.overview .side .progress {
+    width: 70%;
+    margin: auto;
+}
+
+.overview .side .progress span {
+    top: 0;
+    left: 0;
+    width: 70%;
+}
+
+.overview .side .stars {
+    color: #F59E0B;
+}
+
+.overview .information .rows .row {
+    transition: background-color .4s;
+}
+
+.overview .information .rows .row:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+}
+
+.overview .information .rows .row:hover {
+    background-color: #F9F9F9;
+}
+
+.overview .information .rows .row .infos div {
+    width: calc(100% / 3);
+}
+
+.overview .information .rows .row label .toggle-switch {
+    width: 80px;
+    height: 20px;
+}
+
+.overview .information .rows .row label .toggle-switch::before {
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    font-size: 8px;
+}
+
+.overview .information .rows .row label .toggle-checkbox:checked+.toggle-switch::before {
+    content: "\f00c";
+    left: 64px;
+    background-color: #fff;
+    color: var(--blue-color);
+}
+
+/* End Profile */
+
 /* Toggle Switch */
 
 .toggle-checkbox {
