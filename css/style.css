@@ -881,20 +881,21 @@ a {
 
 /* Backup Manager Widget */
 
-.backup-manager .rows {
-    border-bottom: 1px solid #eee;
-}
-
 .backup-manager .rows .row {
     cursor: pointer;
 }
 
-.backup-manager .rows .row input[type="radio"] {
+
+.backup-manager .rows .intro {
+    border-bottom: 1px solid #eee;
+}
+
+.backup-manager .rows .intro .row input[type="radio"] {
     appearance: none;
     margin-right: 25px;
 }
 
-.backup-manager .rows .row .check-mark {
+.backup-manager .rows .intro .row .check-mark {
     width: 22px;
     height: 22px;
     border: 2px solid var(--grey-color);
@@ -903,7 +904,7 @@ a {
     top: 0;
 }
 
-.backup-manager .rows .row .check-mark::before {
+.backup-manager .rows .intro .row .check-mark::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -916,12 +917,34 @@ a {
     transition: transform .4s;
 }
 
-.backup-manager .rows .row input[type="radio"]:checked+.check-mark {
+.backup-manager .rows .intro .row input[type="radio"]:checked+.check-mark {
     border-color: var(--blue-color);
 }
 
-.backup-manager .rows .row input[type="radio"]:checked+.check-mark::before {
+.backup-manager .rows .intro .row input[type="radio"]:checked+.check-mark::before {
     transform: translate(-50%, -50%) scale(1);
+}
+
+.backup-manager .rows .outro .row {
+    border: 2px solid #eee;
+    flex: 1;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.backup-manager .rows .outro input[type="radio"] {
+    appearance: none;
+}
+
+.backup-manager .rows .outro input[type="radio"]:checked+label {
+    color: var(--blue-color);
+    border-color: var(--blue-color);
+}
+
+@media (max-width:767px) {
+    .backup-manager .rows .outro {
+        flex-direction: column;
+    }
 }
 
 /* End Settings */
