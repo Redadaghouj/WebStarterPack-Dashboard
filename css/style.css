@@ -834,12 +834,12 @@ a {
     cursor: pointer;
 }
 
-.widgets-control .rows .row input {
+.widgets-control .rows .row input[type="checkbox"] {
     appearance: none;
     margin-right: 26px;
 }
 
-.widgets-control .rows .row input:checked+.check-mark {
+.widgets-control .rows .row input[type="checkbox"]:checked+.check-mark {
     border-color: var(--blue-color);
     transform: scale(1) rotate(0deg);
 }
@@ -854,6 +854,10 @@ a {
     transition: .3s;
 }
 
+.widgets-control .rows .row:hover .check-mark {
+    border-color: var(--blue-alt-color);
+}
+
 .widgets-control .rows .row .check-mark::before {
     content: "\f00c";
     font-family: "Font Awesome 5 Free";
@@ -864,15 +868,60 @@ a {
     align-items: center;
     width: 100%;
     height: 100%;
-    transform: scale(0) rotate(180deg);
+    transform: scale(0) rotate(360deg);
     color: #fff;
     font-size: 12px;
     transition: .3s;
 }
 
-.widgets-control .rows .row input:checked+.check-mark::before {
+.widgets-control .rows .row input[type="checkbox"]:checked+.check-mark::before {
     background-color: var(--blue-color);
     transform: scale(1) rotate(0deg);
+}
+
+/* Backup Manager Widget */
+
+.backup-manager .rows {
+    border-bottom: 1px solid #eee;
+}
+
+.backup-manager .rows .row {
+    cursor: pointer;
+}
+
+.backup-manager .rows .row input[type="radio"] {
+    appearance: none;
+    margin-right: 25px;
+}
+
+.backup-manager .rows .row .check-mark {
+    width: 22px;
+    height: 22px;
+    border: 2px solid var(--grey-color);
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+}
+
+.backup-manager .rows .row .check-mark::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--blue-color);
+    transition: transform .4s;
+}
+
+.backup-manager .rows .row input[type="radio"]:checked+.check-mark {
+    border-color: var(--blue-color);
+}
+
+.backup-manager .rows .row input[type="radio"]:checked+.check-mark::before {
+    transform: translate(-50%, -50%) scale(1);
 }
 
 /* End Settings */
