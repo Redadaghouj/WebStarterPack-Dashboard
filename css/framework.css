@@ -163,6 +163,10 @@
     padding-top: 10px;
 }
 
+.pt-15 {
+    padding-top: 15px;
+}
+
 .pt-20 {
     padding-top: 20px;
 }
@@ -287,6 +291,10 @@
 /* Font */
 .txt-c {
     text-align: center;
+}
+
+.txt-r {
+    text-align: right;
 }
 
 @media (max-width: 767px) {

@@ -748,21 +748,6 @@ a {
 
 /* Settings */
 
-.settings-page {
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-
-@media (max-width:767px) {
-    .settings-page {
-        grid-template-columns: minmax(200px, 1fr);
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-}
-
 /* Site Control Widget */
 
 .site-control .rows textarea {
@@ -951,8 +936,7 @@ a {
 
 /* Profile */
 
-/* .profile-page {
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+.profile-page {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -960,18 +944,22 @@ a {
 
 @media (max-width:767px) {
     .profile-page {
-        grid-template-columns: minmax(200px, 1fr);
         margin-left: 10px;
         margin-right: 10px;
     }
-} */
+}
 
 /* Overview Widget */
 
 .overview .side {
-    border-right: 1px solid #eee;
     padding: 20px;
     width: 300px;
+}
+
+@media (min-width: 768px) {
+    .overview .side {
+        border-right: 1px solid #eee;
+    }
 }
 
 .overview .side img {
@@ -1027,6 +1015,90 @@ a {
     left: 64px;
     background-color: #fff;
     color: var(--blue-color);
+}
+
+@media (max-width: 767px) {
+    .overview {
+        flex-direction: column;
+    }
+
+    .overview .information .rows .row .infos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .overview .information .rows .row .infos div {
+        margin-bottom: 5px;
+        width: 100%;
+    }
+
+    .overview .information .rows .row label .toggle-switch {
+        margin: auto;
+    }
+}
+
+/* Last Widgets */
+
+.last-widget {
+    flex-wrap: wrap;
+}
+
+/* My Skills Widget */
+
+.my-skills {
+    flex-grow: 1;
+}
+
+.my-skills .rows .row:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.my-skills .rows .row:last-of-type {
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+/* Latest Activities Widget */
+
+.activities {
+    flex-grow: 2;
+}
+
+.activities .rows .row>img {
+    width: 65px;
+}
+
+.activities .rows .row:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+}
+
+.activities .rows .row:last-of-type {
+    padding-top: 17px;
+}
+
+@media (max-width:767px) {
+
+    .last-widget {
+        flex-direction: column;
+    }
+
+    .activities .rows .row {
+        flex-direction: column;
+    }
+
+    .activities .rows .row>img {
+        margin: auto;
+    }
+
+    .activities .rows .row .text {
+        flex-direction: column;
+    }
+
+    .activities .rows .row .text .left div:last-child {
+        margin-bottom: 10px;
+    }
 }
 
 /* End Profile */
