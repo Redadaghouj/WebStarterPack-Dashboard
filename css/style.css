@@ -1375,6 +1375,52 @@ a {
 
 /* End Files */
 
+/* Plans */
+
+.plan .intro {
+    padding: 3px;
+    margin-bottom: 30px;
+}
+
+.plan .intro .text {
+    border: 3px solid #fff;
+    padding: 20px 0;
+}
+
+.plan .intro .text>p {
+    font-size: 24px;
+}
+
+.plan .intro .text .price {
+    font-size: 40px;
+    width: fit-content;
+    margin: auto;
+}
+
+.plan .intro .text .price span {
+    position: absolute;
+    font-size: 25px;
+    top: 0;
+    left: -20px;
+}
+
+.plan ul li {
+    border-bottom: 1px solid #eee;
+}
+
+.plan ul li>svg {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.plan ul li .ic-info {
+    margin-left: auto;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* End Plans */
+
 /* Toggle Switch */
 
 .toggle-checkbox {
