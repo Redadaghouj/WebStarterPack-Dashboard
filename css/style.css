@@ -71,6 +71,8 @@ a {
         grid-template-columns: minmax(200px, 1fr);
         margin-left: 10px;
         margin-right: 10px;
+        margin-bottom: 10px;
+        gap: 10px;
     }
 }
 
@@ -946,6 +948,13 @@ a {
     .profile-page {
         margin-left: 10px;
         margin-right: 10px;
+        margin-bottom: 10px;
+        gap: 10px;
+    }
+
+    .profile-page .last-widget .my-skills,
+    .profile-page .last-widget .activities {
+        margin-top: 10px;
     }
 }
 
@@ -1142,6 +1151,8 @@ a {
 }
 
 .project .outro .progress span {
+    top: 0;
+    left: 0;
     height: 100%;
 }
 
@@ -1157,6 +1168,127 @@ a {
 }
 
 /* End Projects */
+
+/* Courses */
+
+.courses-page {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+    .courses-page {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        gap: 10px;
+    }
+}
+
+.courses-page .course {
+    overflow: hidden;
+}
+
+.courses-page .course img.mentor {
+    top: 20px;
+    left: 20px;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    border: 2px solid #fff;
+}
+
+.courses-page .course img.course-img {
+    width: 100%;
+}
+
+.courses-page .course .info {
+    min-height: 160px;
+}
+
+.courses-page .course .info .desc {
+    line-height: 1.6;
+}
+
+.courses-page .course .outro {
+    border-top: 1px solid #eee;
+    padding: 15px;
+}
+
+.courses-page .course .outro a {
+    left: 50%;
+    top: -13px;
+    transform: translateX(-50%);
+}
+
+/* End Courses */
+
+/* Friends */
+
+.friends-page {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+    .friends-page {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        gap: 10px;
+    }
+}
+
+.friends-page .box .icons {
+    top: 10px;
+    left: 10px;
+}
+
+.friends-page .box .icons svg {
+    font-size: 14px;
+    background-color: #eee;
+    color: #666;
+    border-radius: 50%;
+    padding: 10px 8px;
+    cursor: pointer;
+    transition: color .4s, background-color .5s;
+}
+
+.friends-page .box .icons svg:hover {
+    color: #fff;
+    background-color: var(--blue-color);
+}
+
+.friends-page .box .personal-infos img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.friends-page .box .other-infos {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.friends-page .box .other-infos ul li svg {
+    margin-right: 5px;
+}
+
+.friends-page .box .other-infos p {
+    font-size: 40px;
+    color: var(--orange-color);
+    opacity: .2;
+    font-weight: bold;
+}
+
+
+/* End Friends */
 
 /* Toggle Switch */
 

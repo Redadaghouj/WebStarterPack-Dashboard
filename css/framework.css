@@ -45,6 +45,12 @@
 }
 
 @media (max-width: 767px) {
+    .no-gap-mobile {
+        gap: 0;
+    }
+}
+
+@media (max-width: 767px) {
     .block-mobile {
         display: block;
     }
@@ -194,6 +200,11 @@
 
 .pb-20 {
     padding-bottom: 20px;
+}
+
+.py-5 {
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .py-10 {
