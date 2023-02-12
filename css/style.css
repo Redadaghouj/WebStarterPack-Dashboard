@@ -1172,7 +1172,7 @@ a {
 /* Courses */
 
 .courses-page {
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -1229,7 +1229,7 @@ a {
 /* Friends */
 
 .friends-page {
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -1287,8 +1287,93 @@ a {
     font-weight: bold;
 }
 
-
 /* End Friends */
+
+/* Files */
+
+.files-page {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+    .files-page {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        gap: 10px;
+    }
+}
+
+.files-page .files-stats {
+    min-width: 260px;
+    align-self: flex-start;
+    position: sticky;
+    top: 85px;
+}
+
+@media (max-width: 767px) {
+    .files-page .files-stats {
+        flex: 1;
+        position: unset;
+    }
+}
+
+.files-page .files-stats .row {
+    border: 1px solid #eee;
+}
+
+.files-page .files-stats .row>svg {
+    padding: 13px 11px;
+}
+
+.files-page .files-stats .row .infos {
+    flex: 1;
+}
+
+.files-page .files-stats a {
+    margin: 20px auto 0;
+    transition: background-color .4s;
+}
+
+.files-page .files-stats a:hover {
+    background-color: var(--blue-alt-color);
+}
+
+.files-page .files-stats a:hover svg {
+    animation: arrow-up .7s alternate infinite linear;
+}
+
+.files-page .file-boxes {
+    flex: 1;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+@media (max-width: 767px) {
+    .files-page .file-boxes {
+        grid-template-columns: minmax(200px, 1fr);
+        gap: 10px;
+    }
+}
+
+.files-page .file-boxes .file-box .file-info img {
+    width: 65px;
+    height: 65px;
+    transition: transform .4s;
+}
+
+.files-page .file-boxes .file-box:hover .file-info img {
+    transform: rotate(5deg);
+}
+
+.files-page .file-boxes .file-box .info {
+    border-top: 1px solid #eee;
+}
+
+/* End Files */
 
 /* Toggle Switch */
 
@@ -1342,5 +1427,17 @@ a {
 @keyframes circle-current {
     100% {
         opacity: 0;
+    }
+}
+
+@keyframes arrow-up {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
     }
 }

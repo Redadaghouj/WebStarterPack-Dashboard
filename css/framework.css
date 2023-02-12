@@ -87,6 +87,10 @@
     margin-top: 10px;
 }
 
+.mt-15 {
+    margin-top: 15px;
+}
+
 .mt-20 {
     margin-top: 20px;
 }
@@ -222,6 +226,11 @@
     padding-bottom: 20px;
 }
 
+.px-17 {
+    padding-right: 17px;
+    padding-left: 17px;
+}
+
 .px-20 {
     padding-right: 20px;
     padding-left: 20px;
@@ -269,6 +278,10 @@
 
 .bg-green-light {
     background-color: #D3F3DF;
+}
+
+.bg-red-light {
+    background-color: #FDD9D7;
 }
 
 .c-black {
