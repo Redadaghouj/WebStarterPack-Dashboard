@@ -253,7 +253,7 @@ a {
 
 @media (max-width: 767px) {
     .content>.title {
-        margin: 20px 10px;
+        margin: 20px 10px 35px;
     }
 }
 
