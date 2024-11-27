@@ -1,4 +1,4 @@
-# Web Starter Pack - Dashboard
+# Web Starter Pack - User Dashboard
 
 A modern and customizable dashboard template, ideal for building admin panels or user interfaces. It includes pre-designed layouts for profile, settings, and project management pages.
 
@@ -11,7 +11,7 @@ A modern and customizable dashboard template, ideal for building admin panels or
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Redadaghouj/WebStarterPack-Dashboard.git
+   git clone https://github.com/Redadaghouj/WebStarterPack-Dashboard-User.git
    ```
 2. Open `index.html` in your browser to preview.
 
